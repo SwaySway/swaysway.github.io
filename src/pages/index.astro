@@ -1,0 +1,22 @@
+---
+import '../styles/global.css';
+import Home from '../components/home.astro';
+
+const pageTitle = "SwaySwayDev";
+const description = "Blogs, Works and stuff";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={description} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Home />
+	</body>
+</html>
