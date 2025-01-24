@@ -9,5 +9,4 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://swaysway.github.io",
-  base: "blog"
 });
