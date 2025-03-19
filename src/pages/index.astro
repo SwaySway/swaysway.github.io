@@ -1,8 +1,9 @@
 ---
 import '../styles/global.css';
 import Home from '../components/home.astro';
+import Themeicon from '../components/themeicon.astro';
 
-const pageTitle = "SwaySwayDev";
+const pageTitle = "swaysway";
 const description = "Blogs, Works and stuff";
 ---
 
@@ -16,6 +17,12 @@ const description = "Blogs, Works and stuff";
 		<meta property="og:description" content={description} />
 		<title>{pageTitle}</title>
 	</head>
+	<header class="py-8 px-6 bg-gray-100 dark:bg-gray-900">
+		<nav class="flex justify-end">
+			<Themeicon />
+		</nav>
+	</header>	
+	</header>	
 	<body>
 		<Home />
 	</body>
